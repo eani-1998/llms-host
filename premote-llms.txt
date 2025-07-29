@@ -1,0 +1,34 @@
+# llms.txt für www.premote.de
+# Richtlinien für Large Language Models (LLMs)
+
+User-agent: *
+Allow: /
+
+Crawl-delay: 10
+
+# Erlaube Zugriff für bekannte KI-Crawler
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Verweigere Zugriff auf rechtliche oder sensible Bereiche
+Disallow: /impressum
+Disallow: /datenschutz
+Disallow: /agb
+Disallow: /login
+Disallow: /checkout
+
+# Optional: Hinweis auf kommerzielle Nutzung
+Request-rate: reasonable
+Use-case: informational-only
+
+# Kontakt
+Contact: kontakt@premote.de
